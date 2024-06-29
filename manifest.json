@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Extension Name",
+    "description": "Extension Description",
+    "version": "1.0",
+
+    
+    "content_scripts": [
+    {
+        "js": ["scripts/filename"],
+        "matches": ["http://*/*", "https://*/*"]
+    }
+    ],
+
+    "background": {
+        "service_worker": "filename",
+        "type": "module"
+    },
+    
+    "permissions": ["activeTab", "storage"],
+
+    "action": {
+      "default_popup": "src/filename",
+      "default_icon": "assets/icon"
+    }
+
+}
